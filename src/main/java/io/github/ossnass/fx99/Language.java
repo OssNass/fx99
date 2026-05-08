@@ -44,6 +44,12 @@ public interface Language {
      */
     String LANG_DIR = "LANG.DIR";
 
+    /**
+     * This value indicates the language requires right to left alignment (e.g. Arabic)
+     */
     String LANG_DIR_RTL="RTL";
+    /**
+     * This value indicates the language does not require right to left alignment (e.g. English)
+     */
     String LANG_DIR_LTR="LTR";
 }

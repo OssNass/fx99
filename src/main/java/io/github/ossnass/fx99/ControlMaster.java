@@ -14,7 +14,8 @@ import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
 
 /**
- * @author Ossama Nasser <ossnass@gmail.com>
+ * The control master is responsible for loading controllers and their resources, it also provides the ability to change the language of the application.
+ * @author Ossama Nasser <ossnass@gmail.com></ossnass@gmail.com>
  *
  */
 public class ControlMaster {

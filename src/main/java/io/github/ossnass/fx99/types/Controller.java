@@ -50,13 +50,10 @@ public abstract class Controller implements Initializable {
      */
     protected SimpleStringProperty extraCSSFile;
 
-    /**
-     * The current scene on which the nodes are drawn
-     */
+    /* The internal scene property used for data binding */
     protected SimpleObjectProperty<Scene> scene;
-    /**
-     * The stage in which everything is shown
-     */
+
+    /* The internal scene property used for data binding */
     protected SimpleObjectProperty<Stage> stage;
 
     private String Id;
@@ -269,11 +266,10 @@ public abstract class Controller implements Initializable {
     }
 
     /**
-     * Returns the current scene property
+     * Returns the current scene property of the controller.
      *
-     * @returnthe current scene property
+     * @return the scene as a {@link SimpleObjectProperty}.
      */
-
     public SimpleObjectProperty<Scene> sceneProperty() {
         return this.scene;
     }
@@ -301,9 +297,9 @@ public abstract class Controller implements Initializable {
     }
 
     /**
-     * Returns the current stage property
+     * Returns the current stage property of the controller.
      *
-     * @return the current stage property
+     * @return the stage as a {@link SimpleObjectProperty}.
      */
     public SimpleObjectProperty<Stage> stageProperty() {
         return this.stage;
@@ -329,6 +325,10 @@ public abstract class Controller implements Initializable {
         return this;
     }
 
+    /**
+     * Creates a scene for the current controller and place the root on it
+     * @return the controller after the scene have been created
+     */
     public Controller createScene() {
         setScene(new Scene(this.root));
         return this;

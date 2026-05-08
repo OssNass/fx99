@@ -24,21 +24,25 @@ import java.lang.annotation.Target;
 public @interface ControllerInfo {
     /**
      * The Id of the Controller
+     * @return id of controller
      */
     String Id();
 
     /**
      * The name of the FXML file of this controller cannot be null
+     * @return FXML file path
      */
     String fXMLfile();
 
     /**
      * The name of the extra css containg custom styling, defaults to null
+     * @return CSS for this stage
      */
     String extraCSS() default "";
 
     /**
      * The name of the icon of the stage of the controller, defaults to null
+     * @return the icon of the stage
      */
     String icon() default "";
 }
