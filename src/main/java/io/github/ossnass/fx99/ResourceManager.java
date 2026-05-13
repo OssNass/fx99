@@ -67,7 +67,7 @@ public class ResourceManager {
     public InputStream getResourceAsInputStream(String urlStr) throws IOException {
 
         if (urlStr.startsWith("classpath://")) {
-            Resource res = getResource(urlStr.substring(13));
+            Resource res = getResource(urlStr.substring(12));
             return (res != null) ? res.open() : null;
         } else
             return new FileInputStream(urlStr);

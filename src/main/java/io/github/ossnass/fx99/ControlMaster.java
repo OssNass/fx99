@@ -78,7 +78,7 @@ public class ControlMaster {
      * @throws ControllerNotFoundException if the id doesn't match any controller
      */
     public Controller getController(String id, boolean withStage) throws IOException {
-        if (controllers.containsKey(id))
+        if (!controllers.containsKey(id))
             throw new ControllerNotFoundException(id);
         var info = controllers.get(id);
         var controller = createController(info).createScene().setId(id);
