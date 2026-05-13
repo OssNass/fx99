@@ -4,7 +4,7 @@
 
     <groupId>io.github.ossnass</groupId>
     <artifactId>FX99</artifactId>
-    <version>0.1.0-DEV-SNAPSHOT</version>
+    <version>0.1.0-DEV</version>
     <packaging>jar</packaging>
 
     <description>A description of FX99</description>
