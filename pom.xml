@@ -6,7 +6,7 @@
     <artifactId>FX99</artifactId>
     <version>0.1.0-DEV</version>
     <packaging>jar</packaging>
-
+    <name>JX99</name>
     <description>A description of FX99</description>
     <url>https://github.com/ossnass/FX99</url>
 
